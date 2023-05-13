@@ -1,0 +1,23 @@
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  background-image: url('/images/modern.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.homepage__header {
+  padding: 1.3em;
+}
+.main__title {
+  color: #555555;
+  font-size: 6vw;
+  cursor: pointer;
+}

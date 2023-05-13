@@ -1,0 +1,95 @@
+@mixin list {
+  font-weight: bolder;
+  font-size: 0.7em;
+  padding: 0.7em;
+  color: #777777;
+  text-align: left;
+  list-style-type: none;
+  width: 320px;
+  text-transform: uppercase;
+}
+.iteratorContainer {
+  width: 100%;
+  margin: 2em 0;
+  padding: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.defaultMessage {
+  color: #e91e63;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.disabled {
+  @include list;
+  color: #999999;
+}
+.iteratorHeader {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.iteratorLogo {
+  width: 25px;
+  height: auto;
+}
+.listContainer {
+  cursor: pointer;
+  position: relative;
+  min-height: 300px;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #222222;
+  &:hover {
+    color: #222222;
+    letter-spacing: 1.1px;
+  }
+}
+.unorderedList {
+  margin: 0.2em;
+}
+.listItem {
+  @include list;
+}
+.associatedList {
+  margin: 1em 0;
+}
+.associatedItem {
+  margin: 0.2em 0;
+  color: #777777;
+  list-style-type: none;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.submitButton {
+  cursor: pointer;
+  padding: 0.2em 1.3em;
+  margin: 0 0.2em;
+  color: #ffffff;
+  font-weight: bolder;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  letter-spacing: 2px;
+  background-color: var(--rose-red);
+  &:hover {
+    color: #000000;
+    background-color: #00bcd4;
+  }
+}
+.downloadAnchor {
+  cursor: pointer;
+  padding: 0.2em 1.3em;
+  margin: 0 0.2em;
+  font-weight: bolder;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  letter-spacing: 2px;
+  color: #000000;
+  background-color: #00bcd4;
+}

@@ -1,0 +1,12 @@
+@use 'scss-components/formlabel' as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-width: 270px;
+  min-height: 250px;
+}
+.card__label {
+  @extend .form_label;
+}

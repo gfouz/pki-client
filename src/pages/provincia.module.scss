@@ -1,0 +1,32 @@
+@use 'scss/abstracts/mixins.scss' as *;
+@use 'scss/layout/bars' as *;
+
+.provinciaContainer {
+  @include flex-column-start;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  background-image: url('/images/modern.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.homepage__header {
+  @extend .l-header;
+}
+.main_title {
+  color: #555555;
+  font-size: 6vw;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.homepage__footer {
+  @extend .l-footer;
+}

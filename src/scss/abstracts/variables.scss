@@ -1,0 +1,55 @@
+@function vars($name, $variant) {
+  @if $variant {
+    @return map-get(map-get($vars, $name), $variant);
+  } @else {
+    @return map-get($vars, $name);
+  }
+}
+
+$vars: (
+  type: (
+    xxxxxlrg: 52px,
+    xxxxlrg: 40px,
+    xxxlrg: 32px,
+    xxlrg: 28px,
+    xlrg: 24px,
+    lrg: 20px,
+    med: 16px,
+    sml: 14px,
+  ),
+  layout: (
+    maxwidth: 1024px,
+    gutter: 20px,
+    browser-context: 16px,
+    spacing: 16px,
+  ),
+  breakpoint: (
+    zero: 0,
+    sml: 320px,
+    med: 768px,
+    lrg: 1024px,
+    xlrg: 1280px,
+    xxlrg: 1520px,
+  ),
+  radius: (
+    tny: 2px,
+    sml: 4px,
+    med: 6px,
+    lrg: 8px,
+    xlrg: 50%,
+    xxlrg: 100%,
+  ),
+  vh: (
+    fullscreen: 100vh,
+    half: 50vh,
+    one-third: 33.3333vh,
+    two-third: 66.6666vh,
+  ),
+  transition: (
+    slow: 500ms,
+    med: 400ms,
+    fast: 300ms,
+    xfast: 200ms,
+    xxfast: 100ms,
+  ),
+);

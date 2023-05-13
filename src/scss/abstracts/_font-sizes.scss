@@ -1,0 +1,8 @@
+//headings tags font-sizes by default.
+$font-size: (32px, 24px, 18.72px, 16px, 13.28px, 10.72px);
+
+@for $i from 1 through 6 {
+  h#(i) {
+    font-size: nth($font-size, $i);
+  }
+}

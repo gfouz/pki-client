@@ -1,0 +1,10 @@
+@use 'scss-components/buttons' as *;
+
+.resetButton {
+  @include button(#888888, #99999950);
+}
+.buttonContainer {
+  button:hover {
+    filter: drop-shadow(0 0 2em #222222);
+  }
+}

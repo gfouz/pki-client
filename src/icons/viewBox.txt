@@ -1,0 +1,3 @@
+It is very important to update viewBox property to 
+its right value for each case in order to make it
+visible.

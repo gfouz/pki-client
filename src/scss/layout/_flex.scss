@@ -1,0 +1,9 @@
+.flex {
+  display: flex;
+  gap: var(--gap, var(--size-3));
+}
+.flex-center-xy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
