@@ -1,6 +1,6 @@
 https://github.com/gfouz/pki-client.git
 
-## This is a pki system to generate digital certificates for segurmática
+## This is a pki system to generate digital certificates for segurmática.
 
 this is the client side for that system.
 
