@@ -2,7 +2,7 @@ https://github.com/gfouz/pki-client.git
 
 ## This is a pki system to generate digital certificates for segurmática.
 
-this is the client side for that system.
+this is the client side for that kind of system.
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
