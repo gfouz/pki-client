@@ -18,9 +18,12 @@
       "@/*": ["./src/*"],
       "components/*": ["./src/components/*"],
       "icons/*": ["./src/icons/*"],
+      "features/*": ["./src/features/*"],
       "hooks/*": ["./src/hooks/*"],
-      "layouts/*": ["./src/layouts/*"],
+      "layout/*": ["./src/layout/*"],
       "constants/*": ["./src/constants/*"],
+      "interfaces/*":["./src/interfaces/*"],
+      "services/*":["./src/services/*"],
       "store/*": ["./src/store/*"],
       "scss/*": ["./src/scss/*"],
       "scss-components/*": ["./src/scss/components/*"]

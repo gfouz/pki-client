@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { keyframes } from 'styled-components';
 
 export const spin1 = keyframes`

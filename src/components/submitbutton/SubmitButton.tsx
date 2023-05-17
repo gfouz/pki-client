@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Spinner } from '@chakra-ui/react';
-import * as s from './submitbutton.module.scss';
+import s from './submitbutton.module.scss';
 import ResetButton from './ResetButton';
 
 interface ButtonProps {
@@ -16,7 +16,13 @@ function SubmitButton(props: ButtonProps) {
   return (
     <div className={s.buttonContainer}>
       <button className={s.submitButton}>
-        {loading ? <span><Spinner /></span> : <span>Enviar</span>}
+        {loading ? (
+          <span>
+            <Spinner />
+          </span>
+        ) : (
+          <span>Enviar</span>
+        )}
       </button>
       <ResetButton />
     </div>

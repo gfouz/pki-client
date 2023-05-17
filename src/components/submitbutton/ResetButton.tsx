@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as s from './resetbutton.module.scss';
+import s from './resetbutton.module.scss';
 import { useRouter } from 'next/router';
 
 function ResetButton() {

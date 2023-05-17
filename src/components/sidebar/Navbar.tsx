@@ -1,4 +1,4 @@
-import * as s from './navbar.module.scss';
+import s from './navbar.module.scss';
 import { IRouteArray } from './constants';
 import { useRouter } from 'next/router';
 

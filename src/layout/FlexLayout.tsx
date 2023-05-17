@@ -5,7 +5,7 @@ import { Routes } from 'components/Routes';
 import Sidebar from 'components/sidebar/Sidebar';
 import BurgerButton from 'components/button/BurgerButton';
 import Selector from 'components/selector/Selector';
-import s from './layout.module.scss';
+import s from './flexlayout.module.scss';
 
 interface ILayout {
   name?: string;

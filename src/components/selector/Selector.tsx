@@ -1,17 +1,11 @@
 import * as React from 'react';
 import { useSnapshot } from 'valtio';
 import { state } from 'store/store';
-import * as s from './selector.module.scss';
+import s from './selector.module.scss';
 
 function Selector() {
   const [count, setCount] = React.useState(0);
-  const  option = [
-    'mostrar',
-    'buscar',
-    'crear',
-    'actualizar',
-    'eliminar',
-  ];
+  const option = ['mostrar', 'buscar', 'crear', 'modificar', 'eliminar'];
 
   const handleClick = () => {
     setCount((st) => st + 1);

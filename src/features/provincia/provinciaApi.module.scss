@@ -1,7 +1,6 @@
 @use 'scss/abstracts/mixins.scss' as *;
 @use 'scss/layout/bars' as *;
 
-.crud_container {
+.container {
   @include flex-column-start;
-
 }

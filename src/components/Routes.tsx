@@ -1,5 +1,4 @@
 import Home from 'icons/Home';
-import Blog from 'icons/Blog';
 import FileSearch from 'icons/FileSearch';
 import Link from 'next/link';
 

@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import ExceptionHandler from 'components/exceptionhandler/ExceptionHandler';
-import { getServerMessage } from '../constants';
-import ArrayIterator from '../arrayiterator/ArrayIterator';
-import { Spinner, Heading, Switch } from '@chakra-ui/react';
-import useFetch from './useFetch';
-import * as s from './getter.module.scss';
+import { getServerMessage } from 'services/api';
+import ArrayIterator from '../ArrayIterator';
+import { Switch } from '@chakra-ui/react';
+import useFetch from 'hooks/useFetch';
+import s from './getprovincia.module.scss';
 
 //const payload = localStorage.getItem("jwt")
 
-export default function Getter(props: { url: string }) {
+export default function GetProvincia() {
   const [status, setStatus] = useState('');
-  const { url } = props;
+  const url = '/provincia';
   const [data, active, setActive, isLoading, isError] = useFetch(url);
   const [response, setResponse] = React.useState(data?.result);
   const message = data?.response?.data?.message || data?.message;
@@ -48,7 +48,6 @@ export default function Getter(props: { url: string }) {
         {isError && <div>An error ocurred...</div>}
         {isLoading && (
           <div>
-           
             <h5 color="white">Loading...</h5>
           </div>
         )}
@@ -59,7 +58,5 @@ export default function Getter(props: { url: string }) {
   );
 }
 
-// npm i @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4 @chakra-ui/icons
 
 //OK. npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
-

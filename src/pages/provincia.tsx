@@ -1,5 +1,11 @@
-import Layout from 'components/layout/Layout';
+import FlexLayout from 'layout/FlexLayout';
+import ProvinciaApi from 'features/provincia/ProvinciaApi';
+import { ApiList } from 'features/provincia/services/ApiList';
 
 export default function Provincia() {
-  return <Layout name="Provincia"></Layout>;
+  return (
+    <FlexLayout name="Provincia">
+      <ProvinciaApi list={ApiList} />
+    </FlexLayout>
+  );
 }

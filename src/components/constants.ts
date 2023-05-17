@@ -219,6 +219,17 @@ export async function getRequestEnabled(
   }
 }
 
+interface Other {
+  [key: string]: string | boolean | number;
+}
+
+interface ServerData {
+  [key: string]: string | boolean | number | Other | Other[];
+}
+const obj: ServerData = {
+  name: 'giovani',
+};
+obj.some = true;
 export async function getRequestAll(path: string): Promise<IFormInput[] | any> {
   try {
     const res = await axiosApi.get<IFormInput[]>(path);

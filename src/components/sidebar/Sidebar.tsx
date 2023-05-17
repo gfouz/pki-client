@@ -1,4 +1,4 @@
-import * as s from './sidebar.module.scss';
+import s from './sidebar.module.scss';
 import Navbar from './Navbar';
 import { useSnapshot } from 'valtio';
 import { IRouteArray } from './constants';

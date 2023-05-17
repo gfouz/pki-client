@@ -1,0 +1,26 @@
+@use 'scss/abstracts/mixins.scss' as *;
+@use 'scss/components/bars' as *;
+
+.layout_container {
+  @include flex-column-start;
+  width: 100%;
+  min-height: 100vh;
+}
+.layout_header {
+  @extend .l-header;
+}
+.layout_main {
+  width: 100%;
+  min-height: calc(100vh - 96px);
+}
+.layout_title {
+  color: #f1f1f1;
+  margin: 0 1em;
+}
+.layout_footer {
+  @extend .l-footer;
+  justify-content: center;
+}
+.layout_footer__title {
+  color: #ffffff;
+}
